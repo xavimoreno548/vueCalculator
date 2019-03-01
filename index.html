@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div id="app" class="container p-5">
+    <div class="row d-flex justify-content-center">
+      <div class="card ">
+        <div class="card-body ">
+          <div class="col-md-12">
+            <input type="text" name="" id="" class="form-control input-custom" v-model="input" @keyup.enter="operation()">
+          </div>
+          <div class="button-section">
+            <div class="col-md-12">
+              <button class="btn btn-primary" @click="addNumber(1)">1</button>
+              <button class="btn btn-primary" @click="addNumber(2)">2</button>
+              <button class="btn btn-primary" @click="addNumber(3)">3</button>
+              <button class="btn btn-danger" @click="addNumber('+')">+</button>
+            </div>
+          </div>
+          <div class="button-section">
+            <div class="col-md-12">
+              <button class="btn btn-primary" @click="addNumber(4)">4</button>
+              <button class="btn btn-primary" @click="addNumber(5)">5</button>
+              <button class="btn btn-primary" @click="addNumber(6)">6</button>
+              <button class="btn btn-danger"  @click="addNumber('-')">-</button>
+            </div>
+          </div>
+          <div class="button-section">
+            <div class="col-md-12">
+              <button class="btn btn-primary" @click="addNumber(7)">7</button>
+              <button class="btn btn-primary" @click="addNumber(8)">8</button>
+              <button class="btn btn-primary" @click="addNumber(9)">9</button>
+              <button class="btn btn-danger"  @click="addNumber('*')">*</button>
+            </div>
+          </div>
+          <div class="button-section">
+            <div class="col-md-12">
+              <button class="btn btn-success"  @click="operation()" >=</button>
+              <button class="btn btn-primary" @click="addNumber(0)">0</button>
+              <button class="btn btn-warning"  @click="cleanInput()">C</button>
+              <button class="btn btn-danger"  @click="addNumber('/')">/</button>
+            </div>
+          </div>     
+          <div class="button-section">
+            <div class="col-md-12">
+              <button class="btn btn-danger"  @click="addNumber('(')" >(</button>
+              <button class="btn btn-danger" @click="addNumber(')')">)</button>
+              <button class="btn btn-danger"  @click="addNumber('.')">.</button>
+              <button class="btn btn-danger"  @click="deleted()">Del</button>
+            </div>
+          </div>      
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+  <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.input-custom
+{
+  font-family: ubuntu;
+}
+
+.button-section
+{
+  margin-top: 10px;
+}
+
+.btn{
+  font-weight: bold;
+  font-family: ubuntu;
+  width: 65px;
+  font-size: 20px;
+}
+
+body{
+  height: 100vh;
+  background-color: grey;
+}
